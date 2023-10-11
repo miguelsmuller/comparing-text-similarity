@@ -24,42 +24,42 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the `main.py` script to compare text similarity using Sentence Transformers and Fuzzy.
+1. Run the `main.py` script with two text parameters (enclosed in quotes) in sequence to compare text similarity using **Sentence Transformers** and **Fuzzy**.
 
 ```bash
 python app "João Matos da Silva" "João Pedro da Silva"
 # Sentence Transformers:  0.8613903522491455
-# Sentence Transformers:  0.79
+# Fuzzy:  0.79
 ```
 
 ```bash
 python app "O vasto oceano é belo" "O imenso mar é deslumbrante."
 # Sentence Transformers:  0.6285576224327087
-# Sentence Transformers:  0.45
+# Fuzzy:  0.45
 ```
 
 ```bash
 python app "The vast ocean is beautiful" "The immense sea is stunning"
 # Sentence Transformers:  0.8006699085235596
-# Sentence Transformers:  0.52
+# Fuzzy:  0.52
 ```
 
 ```bash
 python app "color" "colour"
 # Sentence Transformers:  0.973908543586731
-# Sentence Transformers:  0.91
+# Fuzzy:  0.91
 ```
 
 ```bash
 python app "The quick brown fox jumps over the lazy dog" "A fast brown fox leaps over a dozing dog"
 # Sentence Transformers:  0.8295611143112183
-# Sentence Transformers:  0.63
+# Fuzzy:  0.63
 ```
 
 ```bash
 python app "John Smith" "Jon Smithe"
 # Sentence Transformers:  0.7414223551750183
-# Sentence Transformers:  0.9
+# Fuzzy:  0.9
 ```
 
 2. Review the output to see the similarity scores for different text pairs.
